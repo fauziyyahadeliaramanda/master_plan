@@ -1,16 +1,13 @@
-# master_plan
+# Hasil Screenshot
 
-A new Flutter project.
+Berikut adalah hasil tampilan aplikasi Flutter setelah Implementasi Dasar State dengan Model-View
+1. [Hasil Screenshot](images/01.jpeg)
+2. Langkah ini bertujuan untuk membuat tampilan yang bisa berubah secara dinamis sesuai interaksi pengguna (misalnya menambah task, mencentang checklist, atau mengedit teks).
+Kalau kita menggunakan StatelessWidget, tampilan tidak akan bisa diperbarui secara otomatis karena tidak memiliki state.
+3. Variabel plan digunakan untuk menyimpan dan memperbarui daftar rencana.
+Dibuat konstanta karena pada saat pertama kali dibuat, nilainya masih tetap (belum ada task) — dan membantu efisiensi memori.
+4. [Hasil Screenshot](images/02.jpeg) Langkah 9 menampilkan daftar tugas secara dinamis, di mana pengguna bisa mengedit teks dan menandai tugas selesai.
+5. Langkah 11 (initState) → digunakan untuk inisialisasi awal ketika widget pertama kali dibuat, seperti membuat ScrollController dan menambahkan listener.
+Langkah 13 (dispose) → digunakan untuk membersihkan resource seperti controller saat widget dihapus, agar tidak terjadi kebocoran memori.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
